@@ -1,8 +1,8 @@
 import { Character, Human } from "./1-issue";
 
 const characters: Character[] = [
-  { name: "Ford", age: 200 } as any,
-  { name: "Brian", age: 62 } as any,
+  { name: "Ford", age: 200 },
+  { name: "Arthur", age: 62 },
   { identifier: "Marvin", depression: true },
 ];
 
