@@ -2,6 +2,8 @@ import { OrderAPI } from "./1-issue";
 
 // use indexes to extract the type
 type Address = OrderAPI["recipient"]["address"];
+// or use the Pick utility type
+type Recipient = Pick<OrderAPI, "recipient">;
 
 const address: Address = {
   street: "Baum street",
