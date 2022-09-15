@@ -1,3 +1,5 @@
+// Copied from /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+
 interface DocumentEventMap
   extends DocumentAndElementEventHandlersEventMap,
     GlobalEventHandlersEventMap {
