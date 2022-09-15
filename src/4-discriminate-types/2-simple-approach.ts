@@ -13,6 +13,7 @@ function query(): Result {
 
 const result = query();
 if (result.error) {
+  // do error handling
   throw new Error(result.error);
 }
 

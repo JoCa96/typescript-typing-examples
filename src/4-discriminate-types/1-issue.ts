@@ -1,16 +1,3 @@
-/**
- * Discriminate Types
- * ==================
- *
- * Use to:
- * - avoid optional properties
- * - avoid type casting
- *
- * Sources:
- * - https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions
- * - https://www.typescriptlang.org/play?q=149#example/discriminate-types
- */
-
 type ResultWithThrowing = {
   data: string[];
 };
@@ -34,3 +21,6 @@ try {
 } catch (error) {
   console.error(error);
 }
+
+// This doesn't give us any compile time warnings about the error that might be thrown!
+queryWithThrowing();
