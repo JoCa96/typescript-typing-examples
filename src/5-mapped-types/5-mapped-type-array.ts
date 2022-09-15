@@ -40,5 +40,3 @@ const config = loadConfig(
 
 console.log(config.COUNTRY_ENV1); // works
 console.log(config.something); // doesn't work
-
-document.addEventListener
