@@ -8,7 +8,7 @@ export interface EnvVarConfig {
 }
 
 // We have a value that should result in a type
-const configsToLoad: EnvVarsToLoad = {
+const envsToLoad: EnvVarsToLoad = {
   hostname: { optional: false },
   debug: { optional: true },
 };
@@ -16,7 +16,7 @@ const configsToLoad: EnvVarsToLoad = {
 // we can hardcode the type, but we need to change it manually each time our JSON changes...
 interface EnvVars {
   hostname: string;
-  debug: string | undefined;
+  debug?: string | undefined;
 }
 
 function loadConfig(envVarsToLoad: EnvVarConfig): EnvVars {
